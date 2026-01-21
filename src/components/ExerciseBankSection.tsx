@@ -1,4 +1,5 @@
 import ExerciseCard from "./ExerciseCard"
+import "../assets/css/ExerciseBankSection.css"
 
 function ExerciseBankSection() {
 

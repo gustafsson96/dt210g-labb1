@@ -1,0 +1,19 @@
+.exerciseCard {
+    background: #FFE4E1;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.exerciseCard h2 {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .exerciseCard {
+        text-align: center;
+    }
+}

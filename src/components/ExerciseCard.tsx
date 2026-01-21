@@ -1,20 +1,22 @@
+import "../assets/css/ExcerciseCard.css"
+
 interface ExerciseCardProps {
-    name: string, 
-    set: number, 
-    reps: number, 
-    muscle_group: string, 
+    name: string,
+    set: number,
+    reps: number,
+    muscle_group: string,
     requires_equipment: boolean
 }
 
-function ExerciseCard({name, set, reps, muscle_group, requires_equipment} : ExerciseCardProps) {
-  return (
-    <div>
-      <h2>{name}</h2>
-      <p>Sets x Reps: {set} x {reps}</p>
-      <p>Muskelgrupp: {muscle_group}</p>
-      <p>Kräver utrustning: {requires_equipment ? "Ja" : "Nej"}</p>
-    </div>
-  )
+function ExerciseCard({ name, set, reps, muscle_group, requires_equipment }: ExerciseCardProps) {
+    return (
+            <div className="exerciseCard">
+                <h2>{name}</h2>
+                <p><span className="bold">Sets x Reps:</span> {set} x {reps}</p>
+                <p><span className="bold">Muskelgrupp:</span> {muscle_group}</p>
+                <p><span className="bold">Kräver utrustning:</span> {requires_equipment ? "Ja" : "Nej"}</p>
+            </div>
+    )
 }
 
 export default ExerciseCard
