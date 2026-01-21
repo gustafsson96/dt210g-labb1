@@ -1,5 +1,6 @@
-import ExerciseBankSection from "./components/ExerciseBankSection"
 import Header from "./components/Header"
+import ExerciseBankSection from "./components/ExerciseBankSection"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -7,6 +8,8 @@ function App() {
     <>
       <Header title="Övningsbank" />
       <ExerciseBankSection />
+      <Footer />
+
     </>
   )
 }
