@@ -16,10 +16,10 @@ Länk till den publicerade webbplatsen: [Övningsbank]()
 * **Netlify:** För publicering. 
 
 ## Skapade komponenter
-* **Header:**
-* **ExerciseBankSection:**
-* **ExerciseCard:**
-* **Footer:**
+* **Header:** Header som innehåller banner bild och titel. Stylad med inline CSS. 
+* **ExerciseBankSection:** Huvudinnehåll med kort som presenterar övningar som man kan göra på gymmet. Stylad med komponentspecifik stilmall. 
+* **ExerciseCard:** Ett enskilt kort för en övning med namn, rekommenderade set och reps, muskelgrupp och om övningen kräver utrustning eller inte. Stylad med komponentspecifik stilmall. 
+* **Footer:** Webbplatsens footer. Stylad med inline CSS. 
 
 
 
