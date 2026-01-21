@@ -7,21 +7,21 @@ function ExerciseBankSection() {
             name: "Pushup",
             sets: 4,
             reps: 10,
-            muscle_group: "Cheast and Arms",
+            muscle_group: "Bröst & Armar",
             requires_equipment: false
         },
         {
             name: "Situp",
             sets: 3,
             reps: 20,
-            muscle_group: "Core",
+            muscle_group: "Mage",
             requires_equipment: false
         },
         {
             name: "Lateral Raises",
             sets: 3,
             reps: 12,
-            muscle_group: "Shoulders",
+            muscle_group: "Axlar",
             requires_equipment: true
         },
         {
@@ -35,7 +35,7 @@ function ExerciseBankSection() {
             name: "Lunges",
             sets: 3,
             reps: 20,
-            muscle_group: "Legs",
+            muscle_group: "Ben",
             requires_equipment: false
         }
     ]
