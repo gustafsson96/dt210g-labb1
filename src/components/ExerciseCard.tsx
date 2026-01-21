@@ -1,5 +1,6 @@
 import "../assets/css/ExcerciseCard.css"
 
+// Interface for an exercise card
 interface ExerciseCardProps {
     name: string,
     set: number,
@@ -8,6 +9,7 @@ interface ExerciseCardProps {
     requires_equipment: boolean
 }
 
+// A single exercise card
 function ExerciseCard({ name, set, reps, muscle_group, requires_equipment }: ExerciseCardProps) {
     return (
             <div className="exerciseCard">

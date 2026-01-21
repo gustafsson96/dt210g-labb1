@@ -3,6 +3,7 @@ import "../assets/css/ExerciseBankSection.css"
 
 function ExerciseBankSection() {
 
+    // Array storing exercise objects
     const exerciseArr = [
         {
             name: "Pushup",
@@ -40,13 +41,13 @@ function ExerciseBankSection() {
             requires_equipment: false
         }
     ]
-
+    // Map over objects in array to display exercise cards to the screen
     return (
         <>
             <main>
-               { exerciseArr.map((exercise, index) => (
-                <ExerciseCard name={exercise.name} set={exercise.sets} reps={exercise.reps} muscle_group={exercise.muscle_group} requires_equipment={exercise.requires_equipment} key={index} />
-               ))} 
+                {exerciseArr.map((exercise, index) => (
+                    <ExerciseCard name={exercise.name} set={exercise.sets} reps={exercise.reps} muscle_group={exercise.muscle_group} requires_equipment={exercise.requires_equipment} key={index} />
+                ))}
             </main>
         </>
     )
