@@ -1,8 +1,8 @@
 # Laboration 1 DT210G
 
 Den här laborationen har gått ut på att bekanta sig med JavaScript-biblioteket React genom att skapa en enkel webbplats bestående av titel, banner och minst tre objekt baserade på valfritt fritidsintresse. Webbplatsen har delats upp i lämpliga komponenter och använder map() för att iterera över objekten, props för att presentera titel, en conditional operator för att skriva ut text baserat på boolean och en kombination av inline CSS och CSS med stilmall. 
-
-Länk till den publicerade webbplatsen: [Övningsbank]()
+<br><br>
+Länk till den publicerade webbplatsen: **[Övningsbank](https://app.netlify.com/projects/labb1-dt210g-jugu2402/overview)**
 
 ## Använda tekniker
 * **React:** JavaScript-bibliotek för skapandet av lämpliga komponenter och dynamiskt innehåll.
