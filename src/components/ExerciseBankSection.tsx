@@ -44,8 +44,12 @@ function ExerciseBankSection() {
         <>
             <section>
                 <h1>Övningsbank</h1>
-
+               { exerciseArr.map((exercise, index) => (
+                <ExerciseCard name={exercise.name} set={exercise.sets} reps={exercise.reps} muscle_group={exercise.muscle_group} requires_equipment={exercise.requires_equipment} key={index} />
+               ))} 
             </section>
         </>
     )
 }
+
+export default ExerciseBankSection

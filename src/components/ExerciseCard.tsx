@@ -6,13 +6,13 @@ interface ExerciseCardProps {
     requires_equipment: boolean
 }
 
-function ExerciseCard() {
+function ExerciseCard({name, set, reps, muscle_group, requires_equipment} : ExerciseCardProps) {
   return (
     <div>
-      <h2>Övning</h2>
-      <p>Sets x Reps</p>
-      <p>Muskelgrupp</p>
-      <p>Kräver utrustning</p>
+      <h2>{name}</h2>
+      <p>{set} x {reps}</p>
+      <p>{muscle_group}</p>
+      <p>{requires_equipment}</p>
     </div>
   )
 }
