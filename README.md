@@ -15,7 +15,11 @@ Länk till den publicerade webbplatsen: [Övningsbank]()
 * **CSS:** För styling, både inline och i stilmall för att testa olika metoder.
 * **Netlify:** För publicering. 
 
-
+## Skapade komponenter
+* **Header:**
+* **ExerciseBankSection:**
+* **ExerciseCard:**
+* **Footer:**
 
 
 
