@@ -1,73 +1,22 @@
-# React + TypeScript + Vite
+# Laboration 1 DT210G
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Den här laborationen har gått ut på att bekanta sig med JavaScript-biblioteket React genom att skapa en enkel webbplats bestående av titel, banner och minst tre objekt baserade på valfritt fritidsintresse. Webbplatsen har delats upp i lämpliga komponenter och använder map() för att iterera över objekten, props för att presentera titel, en conditional operator för att skriva ut text baserat på boolean och en kombination av inline CSS och CSS med stilmall. 
 
-Currently, two official plugins are available:
+Länk till den publicerade webbplatsen: [Övningsbank]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Använda tekniker
+* **React:** JavaScript-bibliotek för skapandet av lämpliga komponenter och dynamiskt innehåll.
+* **TypeScript:** Programmeringsspråk med statisk typning.
+* **Vite:** Utvecklings- och byggverktyg.
+* **TSX:** Syntax som möjliggör kombinationen av HTML-liknande kod och TypeScript i komponenter.
+* **Props:** Indata som skickas från App.tsx till Header.tsx för att presentera titel dynamiskt. 
+* **map():** Iterera över objekten i arrayen exerciseArr i komponenten ExerciseBankSection och läs ut till skärmen. Unikt index för föremål i arrayen används som key. 
+* **Conditional operator:** Villkor för att presentera "ja" eller "nej" baserat på boolean i komponenten ExerciseCard.
+* **CSS:** För styling, både inline och i stilmall för att testa olika metoder.
+* **Netlify:** För publicering. 
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
