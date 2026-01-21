@@ -1,3 +1,11 @@
+interface ExerciseCardProps {
+    name: string, 
+    set: number, 
+    reps: number, 
+    muscle_group: string, 
+    requires_equipment: boolean
+}
+
 function ExerciseCard() {
   return (
     <div>
